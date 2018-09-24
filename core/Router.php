@@ -77,11 +77,51 @@ class Router {
       return false;
    }
 
-   public function dispatch($uri)
+   public function dispatch($uri, $requestType)
    {
+      if (!$this->match($uri, $requestType)) {
+         throw new \Exception("No Route match");
+      }
+//      var_dump($this->params);
+
+      $controller = $this->params['controller'];
+      $controller = $this->convertToStudlyCaps($controller);
+      $controller = $this->getNamespace() . $controller;
+
+      if (!class_exists($controller))
+         throw new \Exception('Class "' . $controller . '" not exist');
+
+      $controller_object = new $controller($this->params);
+
+      $action = $this->params['action'];
+      $action = $this->convertToCamelCase($action);
+      die(var_dump($action));
+
 
    }
+
+
+   private function convertToStudlyCaps($str)
+   {
+      return str_replace(' ', '', ucwords(str_replace('-', ' ', $str)));
+   }
+
+   private function convertToCamelCase($str)
+   {
+      return lcfirst($this->convertToStudlyCaps($str));
+   }
+
+   private function getNamespace()
+   {
+      $namespace = 'App\Controllers\\';
+      if (array_key_exists('namespace', $this->params)) {
+         $namespace = $this->params['namespace'] . '\\';
+      }
+      return $namespace;
+   }
 }
+
+
 
 
 

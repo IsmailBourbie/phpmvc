@@ -12,8 +12,9 @@ require '../vendor/autoload.php';
 $router = new \Core\Router();
 
 
-$router->get('users',['controller' => 'users', 'action' => 'all']);
+$router->get('users', ['controller' => 'users', 'action' => 'all']);
+$router->get('{controller}/{action}');
 $router->post('{controller}/{action}');
 
 
-var_dump(Core\Request::uri());
+$router->dispatch(Core\Request::uri(), \Core\Request::method());
