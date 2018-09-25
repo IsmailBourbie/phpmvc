@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 
+use App\Config;
 use Core\Controller;
 use Core\View;
 
@@ -13,7 +14,7 @@ class Home extends Controller {
    {
       $data = [
          'title' => 'Home',
-         'name' => 'Ismail'
+         'name'  => 'Ismail'
       ];
       View::render('home/index', $data);
    }
