@@ -95,8 +95,10 @@ class Router {
 
       $action = $this->params['action'];
       $action = $this->convertToCamelCase($action);
-      die(var_dump($action));
-
+      // if action name match (action) throw exception
+      if (preg_match('/^action$/', $action))
+         throw new \Exception('Method "' . $action . '" not exist in Class ' . $controller);
+      $controller_object->$action();
 
    }
 

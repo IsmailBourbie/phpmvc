@@ -12,6 +12,7 @@ require '../vendor/autoload.php';
 $router = new \Core\Router();
 
 
+$router->get('', ['controller' => 'Home', 'action' => 'index']);
 $router->get('users', ['controller' => 'users', 'action' => 'all']);
 $router->get('{controller}/{action}');
 $router->post('{controller}/{action}');
