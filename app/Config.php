@@ -8,6 +8,7 @@
 
 namespace App;
 
+use PDO;
 
 class Config {
 
@@ -20,13 +21,17 @@ class Config {
    {
       switch ($key) {
          case 'HOST' :
-            return '';
+            return 'localhost';
          case 'NAME' :
-            return '';
+            return 'test';
          case 'USER' :
-            return '';
+            return 'root';
          case 'PASS' :
             return '';
+         case 'OPTIONS':
+            return [
+               PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
+            ];
          default :
             return '';
       }
