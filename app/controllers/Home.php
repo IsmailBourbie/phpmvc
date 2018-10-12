@@ -13,7 +13,11 @@ class Home extends Controller {
 
    public function indexAction()
    {
-      $data = User::getById(1);
-      View::render('home/index', $data);
+      $user = User::getById(1);
+      $response = [
+         'user'  => $user,
+         'title' => 'Home'
+      ];
+      View::render('home/index', $response);
    }
 }

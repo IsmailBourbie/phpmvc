@@ -25,7 +25,7 @@ class Controller {
    {
       $method = $name . 'Action';
       if (!method_exists($this, $method))
-         throw new \Exception('Method ' . $method . ' Not exist');
+         throw new \Exception('Method ' . $method . ' Not exist', 404);
       if ($this->before() !== false) {
          call_user_func_array([$this, $method], $args);
          $this->after();

@@ -13,7 +13,7 @@ class Request {
    }
 
 
-   private function removeQueryString($uri)
+   private static function removeQueryString($uri)
    {
       if ($uri != '') {
          // split the string to 2 strings
@@ -30,6 +30,11 @@ class Request {
    public static function method()
    {
       return $_SERVER['REQUEST_METHOD'];
+   }
+
+   public static function isApiCall()
+   {
+      return preg_match('/^api\/[A-z-]+/', self::uri()) != false;
    }
 
 }

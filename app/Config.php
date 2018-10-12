@@ -12,11 +12,21 @@ use PDO;
 
 class Config {
 
+   /**
+    * show error on developing and hide it on production
+    * @return bool
+    */
    public static function SHOW_ERROR()
    {
-      return true;
+      return false;
    }
 
+
+   /**
+    * Databases configurations (host, dbname,user, pass, options[])
+    * @param $key
+    * @return array|string
+    */
    public static function DATABASE($key)
    {
       switch ($key) {
@@ -38,6 +48,11 @@ class Config {
 
    }
 
+   /**
+    * General's site configurations (name, lang...)
+    * @param $key
+    * @return string
+    */
    public static function SITE($key)
    {
       switch ($key) {
@@ -50,6 +65,11 @@ class Config {
       }
    }
 
+   /**
+    * Paths config
+    * @param $key
+    * @return string
+    */
    public static function ROOT($key)
    {
       switch ($key) {
@@ -59,6 +79,8 @@ class Config {
             return 'http://' . $_SERVER['HTTP_HOST'] . str_replace(
                   $_SERVER["DOCUMENT_ROOT"], "", str_replace(
                   '\\', '/', dirname(__DIR__) . DIRECTORY_SEPARATOR));
+         case 'DIR' :
+            return dirname(__DIR__);
          default :
             return '';
       }

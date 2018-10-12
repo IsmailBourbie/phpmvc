@@ -80,23 +80,22 @@ class Router {
    public function dispatch($uri, $requestType)
    {
       if (!$this->match($uri, $requestType)) {
-         throw new \Exception("No Route match");
+         throw new \Exception("No Route match", 404);
       }
-//      var_dump($this->params);
 
       $controller = $this->params['controller'];
       $controller = $this->convertToStudlyCaps($controller);
       $controller = $this->getNamespace() . $controller;
 
       if (!class_exists($controller))
-         throw new \Exception('Class "' . $controller . '" not exist');
+         throw new \Exception('Class "' . $controller . '" not exist', 404);
 
       $controller_object = new $controller($this->params);
 
       $action = $this->params['action'];
       $action = $this->convertToCamelCase($action);
       // if action name match (action) throw exception
-      if (preg_match('/^action$/', $action))
+      if (preg_match('/action$/i', $action) != 0)
          throw new \Exception('Method "' . $action . '" not exist in Class ' . $controller);
       $controller_object->$action();
 
@@ -117,7 +116,7 @@ class Router {
    {
       $namespace = 'App\Controllers\\';
       if (array_key_exists('namespace', $this->params)) {
-         $namespace = $this->params['namespace'] . '\\';
+         $namespace .= $this->params['namespace'] . '\\';
       }
       return $namespace;
    }

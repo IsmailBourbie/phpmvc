@@ -3,7 +3,6 @@
 namespace Core;
 
 
-
 class View {
 
    public static function render($view, $data = [])
@@ -14,6 +13,12 @@ class View {
       if (!file_exists($file))
          throw new \Exception('View: ' . $view . ' not found');
       require $file;
+   }
+
+   public static function renderJson($data = [])
+   {
+      header("Content-type: application/json");
+      echo json_encode($data);
    }
 
 }

@@ -3,13 +3,9 @@
 namespace App\Controllers;
 
 
-class Users {
+use Core\Controller;
 
-   /**
-    * Users constructor.
-    */
-   public function __construct()
-   {
-      echo 'Hello in Users Controller';
-   }
+class Users extends Controller {
+
+
 }
