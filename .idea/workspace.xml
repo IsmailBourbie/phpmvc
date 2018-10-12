@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f5db40c-4cfa-4307-b602-573eeed2aaad" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/api/Users.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/404.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/Error.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/2018-10-12.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Config.php" afterPath="$PROJECT_DIR$/app/Config.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/Home.php" afterPath="$PROJECT_DIR$/app/controllers/Home.php" />
@@ -309,12 +313,12 @@
       <workItem from="1537824243539" duration="3861000" />
       <workItem from="1537909931984" duration="4139000" />
       <workItem from="1538678290940" duration="2375000" />
-      <workItem from="1539349949295" duration="6907000" />
+      <workItem from="1539349949295" duration="7170000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26544000" />
+    <option name="totallyTimeSpent" value="26807000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
