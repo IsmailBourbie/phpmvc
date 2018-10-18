@@ -3,6 +3,8 @@
 namespace Core;
 
 
+use App\Config;
+
 class Router {
 
    public $routes = [
@@ -11,8 +13,24 @@ class Router {
       'PUT'    => [],
       'DELETE' => []
    ];
-   public $params = [];
+   public $params = ['lang' => 'en'];
 
+
+   /**
+    * @param $file
+    * @return static
+    * @throws \Exception
+    */
+   public static function load($file)
+   {
+      $router = new static;
+      if (file_exists($file))
+         require $file;
+      else
+         throw new \Exception('file of Routes not exists');
+      return $router;
+
+   }
 
    /**
     * add function to convert a string to pattern
@@ -79,6 +97,7 @@ class Router {
 
    public function dispatch($uri, $requestType)
    {
+
       if (!$this->match($uri, $requestType)) {
          throw new \Exception("No Route match", 404);
       }
@@ -119,6 +138,15 @@ class Router {
          $namespace .= $this->params['namespace'] . '\\';
       }
       return $namespace;
+   }
+
+   private function getLanguage()
+   {
+      $lang = Config::SITE('LANG');
+      if (array_key_exists('lang', $this->params)) {
+         $lang = $this->params['lang'];
+      }
+      return $lang;
    }
 }
 

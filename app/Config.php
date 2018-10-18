@@ -18,7 +18,7 @@ class Config {
     */
    public static function SHOW_ERROR()
    {
-      return false;
+      return true;
    }
 
 
