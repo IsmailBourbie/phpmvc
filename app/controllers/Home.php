@@ -18,6 +18,6 @@ class Home extends Controller {
          'user'  => $user,
          'title' => 'Home'
       ];
-      View::render('home/index', $response);
+      View::renderTemplate('home/index.php', $response);
    }
 }

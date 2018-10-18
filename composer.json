@@ -4,5 +4,8 @@
       "Core\\": "core/",
       "App\\": "app/"
     }
+  },
+  "require": {
+    "twig/twig": "^2.0"
   }
 }

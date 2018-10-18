@@ -54,7 +54,7 @@ class Error {
             $response = ['Status' => 'wrong', 'message' => 'an exception was occur'];
             View::renderJson($response);
          } else {
-            View::render($code);
+            View::renderTemplate($code . '.php');
          }
       }
    }

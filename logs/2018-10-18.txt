@@ -1,0 +1,372 @@
+[18-Oct-2018 11:56:00 Europe/Berlin] 
+Uncaught exception: 'Twig_Error_Syntax'Message: 'Unexpected character "$".'
+Stack trace:#0 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Lexer.php(202): Twig_Lexer->lexExpression()
+#1 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Lexer.php(105): Twig_Lexer->lexVar()
+#2 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Environment.php(512): Twig_Lexer->tokenize(Object(Twig_Source))
+#3 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Environment.php(565): Twig_Environment->tokenize(Object(Twig_Source))
+#4 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Environment.php(368): Twig_Environment->compileSource(Object(Twig_Source))
+#5 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Environment.php(289): Twig_Environment->loadTemplate('home/index.php')
+#6 C:\xampp\htdocs\phpmvc\core\View.php(26): Twig_Environment->render('home/index.php', Array)
+#7 C:\xampp\htdocs\phpmvc\app\controllers\Home.php(21): Core\View::renderTemplate('home/index.php', Array)
+#8 [internal function]: App\Controllers\Home->indexAction()
+#9 C:\xampp\htdocs\phpmvc\core\Controller.php(30): call_user_func_array(Array, Array)
+#10 C:\xampp\htdocs\phpmvc\core\Router.php(100): Core\Controller->__call('index', Array)
+#11 C:\xampp\htdocs\phpmvc\public\index.php(28): Core\Router->dispatch('', 'GET')
+#12 {main}
+Throw in 'C:\xampp\htdocs\phpmvc\app\views\home\index.php' on line 12
+----------------------------------------------------------
+[18-Oct-2018 11:56:00 Europe/Berlin] PHP Fatal error:  Uncaught Exception: View: 500 not found in C:\xampp\htdocs\phpmvc\core\View.php:16
+Stack trace:
+#0 C:\xampp\htdocs\phpmvc\core\Error.php(57): Core\View::render(500)
+#1 [internal function]: Core\Error::exceptionHandler(Object(Twig_Error_Syntax))
+#2 {main}
+  thrown in C:\xampp\htdocs\phpmvc\core\View.php on line 16
+[18-Oct-2018 11:58:24 Europe/Berlin] 
+Uncaught exception: 'Twig_Error_Syntax'Message: 'Unexpected character "$".'
+Stack trace:#0 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Lexer.php(202): Twig_Lexer->lexExpression()
+#1 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Lexer.php(105): Twig_Lexer->lexVar()
+#2 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Environment.php(512): Twig_Lexer->tokenize(Object(Twig_Source))
+#3 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Environment.php(565): Twig_Environment->tokenize(Object(Twig_Source))
+#4 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Environment.php(368): Twig_Environment->compileSource(Object(Twig_Source))
+#5 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Environment.php(289): Twig_Environment->loadTemplate('home/index.php')
+#6 C:\xampp\htdocs\phpmvc\core\View.php(26): Twig_Environment->render('home/index.php', Array)
+#7 C:\xampp\htdocs\phpmvc\app\controllers\Home.php(21): Core\View::renderTemplate('home/index.php', Array)
+#8 [internal function]: App\Controllers\Home->indexAction()
+#9 C:\xampp\htdocs\phpmvc\core\Controller.php(30): call_user_func_array(Array, Array)
+#10 C:\xampp\htdocs\phpmvc\core\Router.php(100): Core\Controller->__call('index', Array)
+#11 C:\xampp\htdocs\phpmvc\public\index.php(28): Core\Router->dispatch('', 'GET')
+#12 {main}
+Throw in 'C:\xampp\htdocs\phpmvc\app\views\home\index.php' on line 12
+----------------------------------------------------------
+[18-Oct-2018 11:58:24 Europe/Berlin] PHP Fatal error:  Uncaught Exception: View: 500 not found in C:\xampp\htdocs\phpmvc\core\View.php:16
+Stack trace:
+#0 C:\xampp\htdocs\phpmvc\core\Error.php(57): Core\View::render(500)
+#1 [internal function]: Core\Error::exceptionHandler(Object(Twig_Error_Syntax))
+#2 {main}
+  thrown in C:\xampp\htdocs\phpmvc\core\View.php on line 16
+[18-Oct-2018 11:58:26 Europe/Berlin] 
+Uncaught exception: 'Twig_Error_Syntax'Message: 'Unexpected character "$".'
+Stack trace:#0 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Lexer.php(202): Twig_Lexer->lexExpression()
+#1 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Lexer.php(105): Twig_Lexer->lexVar()
+#2 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Environment.php(512): Twig_Lexer->tokenize(Object(Twig_Source))
+#3 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Environment.php(565): Twig_Environment->tokenize(Object(Twig_Source))
+#4 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Environment.php(368): Twig_Environment->compileSource(Object(Twig_Source))
+#5 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Environment.php(289): Twig_Environment->loadTemplate('home/index.php')
+#6 C:\xampp\htdocs\phpmvc\core\View.php(26): Twig_Environment->render('home/index.php', Array)
+#7 C:\xampp\htdocs\phpmvc\app\controllers\Home.php(21): Core\View::renderTemplate('home/index.php', Array)
+#8 [internal function]: App\Controllers\Home->indexAction()
+#9 C:\xampp\htdocs\phpmvc\core\Controller.php(30): call_user_func_array(Array, Array)
+#10 C:\xampp\htdocs\phpmvc\core\Router.php(100): Core\Controller->__call('index', Array)
+#11 C:\xampp\htdocs\phpmvc\public\index.php(28): Core\Router->dispatch('', 'GET')
+#12 {main}
+Throw in 'C:\xampp\htdocs\phpmvc\app\views\home\index.php' on line 12
+----------------------------------------------------------
+[18-Oct-2018 11:58:26 Europe/Berlin] PHP Fatal error:  Uncaught Exception: View: 500 not found in C:\xampp\htdocs\phpmvc\core\View.php:16
+Stack trace:
+#0 C:\xampp\htdocs\phpmvc\core\Error.php(57): Core\View::render(500)
+#1 [internal function]: Core\Error::exceptionHandler(Object(Twig_Error_Syntax))
+#2 {main}
+  thrown in C:\xampp\htdocs\phpmvc\core\View.php on line 16
+[18-Oct-2018 11:59:42 Europe/Berlin] 
+Uncaught exception: 'Twig_Error_Syntax'Message: 'Unexpected character "$".'
+Stack trace:#0 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Lexer.php(202): Twig_Lexer->lexExpression()
+#1 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Lexer.php(105): Twig_Lexer->lexVar()
+#2 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Environment.php(512): Twig_Lexer->tokenize(Object(Twig_Source))
+#3 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Environment.php(565): Twig_Environment->tokenize(Object(Twig_Source))
+#4 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Environment.php(368): Twig_Environment->compileSource(Object(Twig_Source))
+#5 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Environment.php(289): Twig_Environment->loadTemplate('home/index.php')
+#6 C:\xampp\htdocs\phpmvc\core\View.php(26): Twig_Environment->render('home/index.php', Array)
+#7 C:\xampp\htdocs\phpmvc\app\controllers\Home.php(21): Core\View::renderTemplate('home/index.php', Array)
+#8 [internal function]: App\Controllers\Home->indexAction()
+#9 C:\xampp\htdocs\phpmvc\core\Controller.php(30): call_user_func_array(Array, Array)
+#10 C:\xampp\htdocs\phpmvc\core\Router.php(100): Core\Controller->__call('index', Array)
+#11 C:\xampp\htdocs\phpmvc\public\index.php(28): Core\Router->dispatch('', 'GET')
+#12 {main}
+Throw in 'C:\xampp\htdocs\phpmvc\app\views\home\index.php' on line 12
+----------------------------------------------------------
+[18-Oct-2018 11:59:54 Europe/Berlin] 
+Uncaught exception: 'Twig_Error_Syntax'Message: 'Unexpected character "$".'
+Stack trace:#0 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Lexer.php(202): Twig_Lexer->lexExpression()
+#1 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Lexer.php(105): Twig_Lexer->lexVar()
+#2 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Environment.php(512): Twig_Lexer->tokenize(Object(Twig_Source))
+#3 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Environment.php(565): Twig_Environment->tokenize(Object(Twig_Source))
+#4 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Environment.php(368): Twig_Environment->compileSource(Object(Twig_Source))
+#5 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Environment.php(289): Twig_Environment->loadTemplate('home/index.php')
+#6 C:\xampp\htdocs\phpmvc\core\View.php(26): Twig_Environment->render('home/index.php', Array)
+#7 C:\xampp\htdocs\phpmvc\app\controllers\Home.php(21): Core\View::renderTemplate('home/index.php', Array)
+#8 [internal function]: App\Controllers\Home->indexAction()
+#9 C:\xampp\htdocs\phpmvc\core\Controller.php(30): call_user_func_array(Array, Array)
+#10 C:\xampp\htdocs\phpmvc\core\Router.php(100): Core\Controller->__call('index', Array)
+#11 C:\xampp\htdocs\phpmvc\public\index.php(28): Core\Router->dispatch('', 'GET')
+#12 {main}
+Throw in 'C:\xampp\htdocs\phpmvc\app\views\home\index.php' on line 12
+----------------------------------------------------------
+[18-Oct-2018 12:00:34 Europe/Berlin] 
+Uncaught exception: 'Twig_Error_Syntax'Message: 'Unexpected character "$".'
+Stack trace:#0 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Lexer.php(202): Twig_Lexer->lexExpression()
+#1 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Lexer.php(105): Twig_Lexer->lexVar()
+#2 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Environment.php(512): Twig_Lexer->tokenize(Object(Twig_Source))
+#3 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Environment.php(565): Twig_Environment->tokenize(Object(Twig_Source))
+#4 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Environment.php(368): Twig_Environment->compileSource(Object(Twig_Source))
+#5 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Environment.php(289): Twig_Environment->loadTemplate('home/index.php')
+#6 C:\xampp\htdocs\phpmvc\core\View.php(27): Twig_Environment->render('home/index.php', Array)
+#7 C:\xampp\htdocs\phpmvc\app\controllers\Home.php(21): Core\View::renderTemplate('home/index.php', Array)
+#8 [internal function]: App\Controllers\Home->indexAction()
+#9 C:\xampp\htdocs\phpmvc\core\Controller.php(30): call_user_func_array(Array, Array)
+#10 C:\xampp\htdocs\phpmvc\core\Router.php(100): Core\Controller->__call('index', Array)
+#11 C:\xampp\htdocs\phpmvc\public\index.php(28): Core\Router->dispatch('', 'GET')
+#12 {main}
+Throw in 'C:\xampp\htdocs\phpmvc\app\views\home\index.php' on line 12
+----------------------------------------------------------
+[18-Oct-2018 12:00:36 Europe/Berlin] 
+Uncaught exception: 'Twig_Error_Syntax'Message: 'Unexpected character "$".'
+Stack trace:#0 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Lexer.php(202): Twig_Lexer->lexExpression()
+#1 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Lexer.php(105): Twig_Lexer->lexVar()
+#2 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Environment.php(512): Twig_Lexer->tokenize(Object(Twig_Source))
+#3 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Environment.php(565): Twig_Environment->tokenize(Object(Twig_Source))
+#4 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Environment.php(368): Twig_Environment->compileSource(Object(Twig_Source))
+#5 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Environment.php(289): Twig_Environment->loadTemplate('home/index.php')
+#6 C:\xampp\htdocs\phpmvc\core\View.php(27): Twig_Environment->render('home/index.php', Array)
+#7 C:\xampp\htdocs\phpmvc\app\controllers\Home.php(21): Core\View::renderTemplate('home/index.php', Array)
+#8 [internal function]: App\Controllers\Home->indexAction()
+#9 C:\xampp\htdocs\phpmvc\core\Controller.php(30): call_user_func_array(Array, Array)
+#10 C:\xampp\htdocs\phpmvc\core\Router.php(100): Core\Controller->__call('index', Array)
+#11 C:\xampp\htdocs\phpmvc\public\index.php(28): Core\Router->dispatch('', 'GET')
+#12 {main}
+Throw in 'C:\xampp\htdocs\phpmvc\app\views\home\index.php' on line 12
+----------------------------------------------------------
+[18-Oct-2018 12:00:54 Europe/Berlin] 
+Uncaught exception: 'Twig_Error_Syntax'Message: 'Unexpected character "$".'
+Stack trace:#0 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Lexer.php(202): Twig_Lexer->lexExpression()
+#1 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Lexer.php(105): Twig_Lexer->lexVar()
+#2 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Environment.php(512): Twig_Lexer->tokenize(Object(Twig_Source))
+#3 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Environment.php(565): Twig_Environment->tokenize(Object(Twig_Source))
+#4 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Environment.php(368): Twig_Environment->compileSource(Object(Twig_Source))
+#5 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Environment.php(289): Twig_Environment->loadTemplate('home/index.php')
+#6 C:\xampp\htdocs\phpmvc\core\View.php(27): Twig_Environment->render('home/index.php', Array)
+#7 C:\xampp\htdocs\phpmvc\app\controllers\Home.php(21): Core\View::renderTemplate('home/index.php', Array)
+#8 [internal function]: App\Controllers\Home->indexAction()
+#9 C:\xampp\htdocs\phpmvc\core\Controller.php(30): call_user_func_array(Array, Array)
+#10 C:\xampp\htdocs\phpmvc\core\Router.php(100): Core\Controller->__call('index', Array)
+#11 C:\xampp\htdocs\phpmvc\public\index.php(28): Core\Router->dispatch('', 'GET')
+#12 {main}
+Throw in 'C:\xampp\htdocs\phpmvc\app\views\home\index.php' on line 12
+----------------------------------------------------------
+[18-Oct-2018 12:01:31 Europe/Berlin] 
+Uncaught exception: 'Twig_Error_Syntax'Message: 'Unexpected character "$".'
+Stack trace:#0 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Lexer.php(202): Twig_Lexer->lexExpression()
+#1 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Lexer.php(105): Twig_Lexer->lexVar()
+#2 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Environment.php(512): Twig_Lexer->tokenize(Object(Twig_Source))
+#3 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Environment.php(565): Twig_Environment->tokenize(Object(Twig_Source))
+#4 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Environment.php(368): Twig_Environment->compileSource(Object(Twig_Source))
+#5 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Environment.php(289): Twig_Environment->loadTemplate('home/index.php')
+#6 C:\xampp\htdocs\phpmvc\core\View.php(27): Twig_Environment->render('home/index.php', Array)
+#7 C:\xampp\htdocs\phpmvc\app\controllers\Home.php(21): Core\View::renderTemplate('home/index.php', Array)
+#8 [internal function]: App\Controllers\Home->indexAction()
+#9 C:\xampp\htdocs\phpmvc\core\Controller.php(30): call_user_func_array(Array, Array)
+#10 C:\xampp\htdocs\phpmvc\core\Router.php(100): Core\Controller->__call('index', Array)
+#11 C:\xampp\htdocs\phpmvc\public\index.php(28): Core\Router->dispatch('', 'GET')
+#12 {main}
+Throw in 'C:\xampp\htdocs\phpmvc\app\views\home\index.php' on line 12
+----------------------------------------------------------
+[18-Oct-2018 12:01:46 Europe/Berlin] 
+Uncaught exception: 'Twig_Error_Syntax'Message: 'Unexpected character "$".'
+Stack trace:#0 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Lexer.php(202): Twig_Lexer->lexExpression()
+#1 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Lexer.php(105): Twig_Lexer->lexVar()
+#2 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Environment.php(512): Twig_Lexer->tokenize(Object(Twig_Source))
+#3 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Environment.php(565): Twig_Environment->tokenize(Object(Twig_Source))
+#4 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Environment.php(368): Twig_Environment->compileSource(Object(Twig_Source))
+#5 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Environment.php(289): Twig_Environment->loadTemplate('home/index.php')
+#6 C:\xampp\htdocs\phpmvc\core\View.php(27): Twig_Environment->render('home/index.php', Array)
+#7 C:\xampp\htdocs\phpmvc\app\controllers\Home.php(21): Core\View::renderTemplate('home/index.php', Array)
+#8 [internal function]: App\Controllers\Home->indexAction()
+#9 C:\xampp\htdocs\phpmvc\core\Controller.php(30): call_user_func_array(Array, Array)
+#10 C:\xampp\htdocs\phpmvc\core\Router.php(100): Core\Controller->__call('index', Array)
+#11 C:\xampp\htdocs\phpmvc\public\index.php(28): Core\Router->dispatch('', 'GET')
+#12 {main}
+Throw in 'C:\xampp\htdocs\phpmvc\app\views\home\index.php' on line 12
+----------------------------------------------------------
+[18-Oct-2018 12:02:09 Europe/Berlin] 
+Uncaught exception: 'Twig_Error_Syntax'Message: 'Unexpected character "$".'
+Stack trace:#0 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Lexer.php(202): Twig_Lexer->lexExpression()
+#1 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Lexer.php(105): Twig_Lexer->lexVar()
+#2 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Environment.php(512): Twig_Lexer->tokenize(Object(Twig_Source))
+#3 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Environment.php(565): Twig_Environment->tokenize(Object(Twig_Source))
+#4 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Environment.php(368): Twig_Environment->compileSource(Object(Twig_Source))
+#5 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Environment.php(289): Twig_Environment->loadTemplate('home/index.php')
+#6 C:\xampp\htdocs\phpmvc\core\View.php(27): Twig_Environment->render('home/index.php', Array)
+#7 C:\xampp\htdocs\phpmvc\app\controllers\Home.php(21): Core\View::renderTemplate('home/index.php', Array)
+#8 [internal function]: App\Controllers\Home->indexAction()
+#9 C:\xampp\htdocs\phpmvc\core\Controller.php(30): call_user_func_array(Array, Array)
+#10 C:\xampp\htdocs\phpmvc\core\Router.php(100): Core\Controller->__call('index', Array)
+#11 C:\xampp\htdocs\phpmvc\public\index.php(28): Core\Router->dispatch('', 'GET')
+#12 {main}
+Throw in 'C:\xampp\htdocs\phpmvc\app\views\home\index.php' on line 12
+----------------------------------------------------------
+[18-Oct-2018 12:02:24 Europe/Berlin] 
+Uncaught exception: 'Twig_Error_Syntax'Message: 'Unexpected character "$".'
+Stack trace:#0 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Lexer.php(202): Twig_Lexer->lexExpression()
+#1 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Lexer.php(105): Twig_Lexer->lexVar()
+#2 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Environment.php(512): Twig_Lexer->tokenize(Object(Twig_Source))
+#3 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Environment.php(565): Twig_Environment->tokenize(Object(Twig_Source))
+#4 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Environment.php(368): Twig_Environment->compileSource(Object(Twig_Source))
+#5 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Environment.php(289): Twig_Environment->loadTemplate('home/index.php')
+#6 C:\xampp\htdocs\phpmvc\core\View.php(26): Twig_Environment->render('home/index.php', Array)
+#7 C:\xampp\htdocs\phpmvc\app\controllers\Home.php(21): Core\View::renderTemplate('home/index.php', Array)
+#8 [internal function]: App\Controllers\Home->indexAction()
+#9 C:\xampp\htdocs\phpmvc\core\Controller.php(30): call_user_func_array(Array, Array)
+#10 C:\xampp\htdocs\phpmvc\core\Router.php(100): Core\Controller->__call('index', Array)
+#11 C:\xampp\htdocs\phpmvc\public\index.php(28): Core\Router->dispatch('', 'GET')
+#12 {main}
+Throw in 'C:\xampp\htdocs\phpmvc\app\views\home\index.php' on line 12
+----------------------------------------------------------
+[18-Oct-2018 12:02:55 Europe/Berlin] 
+Uncaught exception: 'Twig_Error_Syntax'Message: 'Unexpected character "$".'
+Stack trace:#0 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Lexer.php(202): Twig_Lexer->lexExpression()
+#1 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Lexer.php(105): Twig_Lexer->lexVar()
+#2 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Environment.php(512): Twig_Lexer->tokenize(Object(Twig_Source))
+#3 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Environment.php(565): Twig_Environment->tokenize(Object(Twig_Source))
+#4 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Environment.php(368): Twig_Environment->compileSource(Object(Twig_Source))
+#5 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Environment.php(289): Twig_Environment->loadTemplate('home/index.php')
+#6 C:\xampp\htdocs\phpmvc\core\View.php(27): Twig_Environment->render('home/index.php', Array)
+#7 C:\xampp\htdocs\phpmvc\app\controllers\Home.php(21): Core\View::renderTemplate('home/index.php', Array)
+#8 [internal function]: App\Controllers\Home->indexAction()
+#9 C:\xampp\htdocs\phpmvc\core\Controller.php(30): call_user_func_array(Array, Array)
+#10 C:\xampp\htdocs\phpmvc\core\Router.php(100): Core\Controller->__call('index', Array)
+#11 C:\xampp\htdocs\phpmvc\public\index.php(28): Core\Router->dispatch('', 'GET')
+#12 {main}
+Throw in 'C:\xampp\htdocs\phpmvc\app\views\home\index.php' on line 12
+----------------------------------------------------------
+[18-Oct-2018 12:04:00 Europe/Berlin] 
+Uncaught exception: 'Twig_Error_Syntax'Message: 'Unexpected character "$".'
+Stack trace:#0 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Lexer.php(202): Twig_Lexer->lexExpression()
+#1 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Lexer.php(105): Twig_Lexer->lexVar()
+#2 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Environment.php(512): Twig_Lexer->tokenize(Object(Twig_Source))
+#3 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Environment.php(565): Twig_Environment->tokenize(Object(Twig_Source))
+#4 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Environment.php(368): Twig_Environment->compileSource(Object(Twig_Source))
+#5 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Environment.php(289): Twig_Environment->loadTemplate('home/index.php')
+#6 C:\xampp\htdocs\phpmvc\core\View.php(27): Twig_Environment->render('home/index.php', Array)
+#7 C:\xampp\htdocs\phpmvc\app\controllers\Home.php(21): Core\View::renderTemplate('home/index.php', Array)
+#8 [internal function]: App\Controllers\Home->indexAction()
+#9 C:\xampp\htdocs\phpmvc\core\Controller.php(30): call_user_func_array(Array, Array)
+#10 C:\xampp\htdocs\phpmvc\core\Router.php(100): Core\Controller->__call('index', Array)
+#11 C:\xampp\htdocs\phpmvc\public\index.php(28): Core\Router->dispatch('', 'GET')
+#12 {main}
+Throw in 'C:\xampp\htdocs\phpmvc\app\views\home\index.php' on line 12
+----------------------------------------------------------
+[18-Oct-2018 12:07:05 Europe/Berlin] 
+Uncaught exception: 'Twig_Error_Syntax'Message: 'Unexpected character "$".'
+Stack trace:#0 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Lexer.php(202): Twig_Lexer->lexExpression()
+#1 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Lexer.php(105): Twig_Lexer->lexVar()
+#2 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Environment.php(512): Twig_Lexer->tokenize(Object(Twig_Source))
+#3 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Environment.php(565): Twig_Environment->tokenize(Object(Twig_Source))
+#4 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Environment.php(368): Twig_Environment->compileSource(Object(Twig_Source))
+#5 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Environment.php(289): Twig_Environment->loadTemplate('home/index.php')
+#6 C:\xampp\htdocs\phpmvc\core\View.php(27): Twig_Environment->render('home/index.php', Array)
+#7 C:\xampp\htdocs\phpmvc\app\controllers\Home.php(21): Core\View::renderTemplate('home/index.php', Array)
+#8 [internal function]: App\Controllers\Home->indexAction()
+#9 C:\xampp\htdocs\phpmvc\core\Controller.php(30): call_user_func_array(Array, Array)
+#10 C:\xampp\htdocs\phpmvc\core\Router.php(100): Core\Controller->__call('index', Array)
+#11 C:\xampp\htdocs\phpmvc\public\index.php(28): Core\Router->dispatch('', 'GET')
+#12 {main}
+Throw in 'C:\xampp\htdocs\phpmvc\app\views\home\index.php' on line 12
+----------------------------------------------------------
+[18-Oct-2018 12:37:07 Europe/Berlin] 
+Uncaught exception: 'Exception'Message: 'No Route match'
+Stack trace:#0 C:\xampp\htdocs\phpmvc\public\index.php(28): Core\Router->dispatch('hello', 'GET')
+#1 {main}
+Throw in 'C:\xampp\htdocs\phpmvc\core\Router.php' on line 83
+----------------------------------------------------------
+[18-Oct-2018 12:37:26 Europe/Berlin] 
+Uncaught exception: 'Exception'Message: 'No Route match'
+Stack trace:#0 C:\xampp\htdocs\phpmvc\public\index.php(28): Core\Router->dispatch('hello', 'GET')
+#1 {main}
+Throw in 'C:\xampp\htdocs\phpmvc\core\Router.php' on line 83
+----------------------------------------------------------
+[18-Oct-2018 12:37:26 Europe/Berlin] PHP Fatal error:  Uncaught Twig_Error_Loader: Unable to find template "404" (looked into: C:/xampp/htdocs/phpmvc/app/views). in C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Loader\Filesystem.php:226
+Stack trace:
+#0 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Loader\Filesystem.php(143): Twig_Loader_Filesystem->findTemplate('404')
+#1 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Environment.php(270): Twig_Loader_Filesystem->getCacheKey(404)
+#2 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Environment.php(350): Twig_Environment->getTemplateClass(404)
+#3 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Environment.php(289): Twig_Environment->loadTemplate(404)
+#4 C:\xampp\htdocs\phpmvc\core\View.php(27): Twig_Environment->render(404, Array)
+#5 C:\xampp\htdocs\phpmvc\core\Error.php(57): Core\View::renderTemplate(404)
+#6 [internal function]: Core\Error::exceptionHandler(Object(Exception))
+#7 {main}
+  thrown in C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Loader\Filesystem.php on line 226
+[18-Oct-2018 12:37:59 Europe/Berlin] 
+Uncaught exception: 'Exception'Message: 'No Route match'
+Stack trace:#0 C:\xampp\htdocs\phpmvc\public\index.php(28): Core\Router->dispatch('hello', 'GET')
+#1 {main}
+Throw in 'C:\xampp\htdocs\phpmvc\core\Router.php' on line 83
+----------------------------------------------------------
+[18-Oct-2018 12:42:53 Europe/Berlin] 
+Uncaught exception: 'Exception'Message: 'No Route match'
+Stack trace:#0 C:\xampp\htdocs\phpmvc\public\index.php(28): Core\Router->dispatch('hello', 'GET')
+#1 {main}
+Throw in 'C:\xampp\htdocs\phpmvc\core\Router.php' on line 83
+----------------------------------------------------------
+[18-Oct-2018 12:43:40 Europe/Berlin] 
+Uncaught exception: 'Exception'Message: 'No Route match'
+Stack trace:#0 C:\xampp\htdocs\phpmvc\public\index.php(28): Core\Router->dispatch('hello', 'GET')
+#1 {main}
+Throw in 'C:\xampp\htdocs\phpmvc\core\Router.php' on line 83
+----------------------------------------------------------
+[18-Oct-2018 12:43:40 Europe/Berlin] PHP Fatal error:  Uncaught Twig_Error_Syntax: Unexpected token "punctuation" of value ":" ("end of print statement" expected). in C:\xampp\htdocs\phpmvc\app\views\404.php:6
+Stack trace:
+#0 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Parser.php(126): Twig_TokenStream->expect(4)
+#1 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\TokenParser\Block.php(38): Twig_Parser->subparse(Array, true)
+#2 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Parser.php(168): Twig_TokenParser_Block->parse(Object(Twig_Token))
+#3 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Parser.php(81): Twig_Parser->subparse(NULL, false)
+#4 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Environment.php(533): Twig_Parser->parse(Object(Twig_TokenStream))
+#5 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Environment.php(565): Twig_Environment->parse(Object(Twig_TokenStream))
+#6 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\Environment.php(368): Twig_Environment->compileSource(Object(Twig_Source))
+#7 C:\xampp\htdocs\phpmvc\vendor\twig\twig\lib\Twig\E in C:\xampp\htdocs\phpmvc\app\views\404.php on line 6
+[18-Oct-2018 12:43:59 Europe/Berlin] 
+Uncaught exception: 'Exception'Message: 'No Route match'
+Stack trace:#0 C:\xampp\htdocs\phpmvc\public\index.php(28): Core\Router->dispatch('hello', 'GET')
+#1 {main}
+Throw in 'C:\xampp\htdocs\phpmvc\core\Router.php' on line 83
+----------------------------------------------------------
+[18-Oct-2018 12:44:23 Europe/Berlin] 
+Uncaught exception: 'Exception'Message: 'No Route match'
+Stack trace:#0 C:\xampp\htdocs\phpmvc\public\index.php(28): Core\Router->dispatch('hello', 'GET')
+#1 {main}
+Throw in 'C:\xampp\htdocs\phpmvc\core\Router.php' on line 83
+----------------------------------------------------------
+[18-Oct-2018 12:44:38 Europe/Berlin] 
+Uncaught exception: 'Exception'Message: 'No Route match'
+Stack trace:#0 C:\xampp\htdocs\phpmvc\public\index.php(28): Core\Router->dispatch('app', 'GET')
+#1 {main}
+Throw in 'C:\xampp\htdocs\phpmvc\core\Router.php' on line 83
+----------------------------------------------------------
+[18-Oct-2018 12:44:52 Europe/Berlin] 
+Uncaught exception: 'Exception'Message: 'No Route match'
+Stack trace:#0 C:\xampp\htdocs\phpmvc\public\index.php(28): Core\Router->dispatch('app', 'GET')
+#1 {main}
+Throw in 'C:\xampp\htdocs\phpmvc\core\Router.php' on line 83
+----------------------------------------------------------
+[18-Oct-2018 12:48:19 Europe/Berlin] 
+Uncaught exception: 'Exception'Message: 'No Route match'
+Stack trace:#0 C:\xampp\htdocs\phpmvc\public\index.php(28): Core\Router->dispatch('app', 'GET')
+#1 {main}
+Throw in 'C:\xampp\htdocs\phpmvc\core\Router.php' on line 83
+----------------------------------------------------------
+[18-Oct-2018 12:48:27 Europe/Berlin] 
+Uncaught exception: 'Exception'Message: 'No Route match'
+Stack trace:#0 C:\xampp\htdocs\phpmvc\public\index.php(28): Core\Router->dispatch('idex', 'GET')
+#1 {main}
+Throw in 'C:\xampp\htdocs\phpmvc\core\Router.php' on line 83
+----------------------------------------------------------
+[18-Oct-2018 12:48:30 Europe/Berlin] 
+Uncaught exception: 'Exception'Message: 'No Route match'
+Stack trace:#0 C:\xampp\htdocs\phpmvc\public\index.php(28): Core\Router->dispatch('index', 'GET')
+#1 {main}
+Throw in 'C:\xampp\htdocs\phpmvc\core\Router.php' on line 83
+----------------------------------------------------------
+[18-Oct-2018 12:48:34 Europe/Berlin] 
+Uncaught exception: 'Exception'Message: 'No Route match'
+Stack trace:#0 C:\xampp\htdocs\phpmvc\public\index.php(28): Core\Router->dispatch('home', 'GET')
+#1 {main}
+Throw in 'C:\xampp\htdocs\phpmvc\core\Router.php' on line 83
+----------------------------------------------------------
