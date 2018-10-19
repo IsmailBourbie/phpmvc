@@ -17,12 +17,17 @@ class View {
          throw new \Exception('View: ' . $view . ' not found');
       require $file;
    }
+
    public static function renderTemplate($template, $args = [])
    {
       static $twig = null;
       if ($twig === null) {
          $loader = new \Twig_Loader_Filesystem(Config::ROOT('APP') . "views");
          $twig = new \Twig_Environment($loader);
+         $filter = new \Twig_Filter('lang', function ($key) {
+            return Lang::get($key);
+         });
+         $twig->addFilter($filter);
          $twig->addGlobal('config', new Config());
       }
       echo $twig->render($template, $args);

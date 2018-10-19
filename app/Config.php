@@ -80,7 +80,7 @@ class Config {
                   $_SERVER["DOCUMENT_ROOT"], "", str_replace(
                   '\\', '/', dirname(__DIR__) . DIRECTORY_SEPARATOR));
          case 'DIR' :
-            return dirname(__DIR__);
+            return str_replace('\\', '/', dirname(__DIR__) . DIRECTORY_SEPARATOR);
          default :
             return '';
       }

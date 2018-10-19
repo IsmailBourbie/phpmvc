@@ -101,7 +101,10 @@ class Router {
       if (!$this->match($uri, $requestType)) {
          throw new \Exception("No Route match", 404);
       }
+      // Load language
+      Lang::load($this->getLanguage());
 
+      // get the controller from route params
       $controller = $this->params['controller'];
       $controller = $this->convertToStudlyCaps($controller);
       $controller = $this->getNamespace() . $controller;
@@ -111,6 +114,7 @@ class Router {
 
       $controller_object = new $controller($this->params);
 
+      // get the action from route params
       $action = $this->params['action'];
       $action = $this->convertToCamelCase($action);
       // if action name match (action) throw exception
